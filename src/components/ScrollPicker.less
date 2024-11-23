@@ -1,0 +1,25 @@
+.ScrollPicker {
+    position: relative;
+    user-select: none;
+    box-sizing: border-box;
+
+    &.vertical {
+        transform: rotate(-90deg);
+    }
+
+    .scroll-picker-container {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .dragger {
+            cursor: grab;
+            height: 30px;
+        }
+    }
+}

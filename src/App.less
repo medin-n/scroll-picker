@@ -1,0 +1,52 @@
+.App {
+    height: 100vh;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+    box-sizing: border-box;
+
+    .example-component {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 20px;
+        box-sizing: border-box;
+
+        .scroll-wrapper {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            padding: 20px;
+            border-radius: 20px;
+
+            .label {
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .white {
+            border: 1px solid black;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
